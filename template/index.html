@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ewaluator wyrażeń</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            padding: 20px;
+            padding-top: 80px;
+            background-color: #EEE;
+        }
+    </style>
+</head>
+
+<body>
+    <div style="text-align:center">
+        <h1>Ewaluator wyrażeń</h1>
+    </div>
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Kalkulator</h5>
+                    <p class="card-text">Kalkulator bazujący na ewaluacji wyrażeń arytmetycznych wspierający funkcje, operatory unarne i binarne.</p>
+                    <a href="{{ url_for('calculator') }}" class="btn btn-primary">Otwórz</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Parser wzorów chemicznych</h5>
+                    <p class="card-text">Program podliczający całkowitą ilość poszczególnych pierwiastków w podanym atomie</p>
+                    <a href="{{ url_for('atom_counter') }}" class="btn btn-primary">Otwórz</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

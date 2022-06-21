@@ -34,6 +34,8 @@ def atom_counter():
         atoms = json.loads(request.args['atoms'].replace("'", '"'))
     else:
         atoms = {}
+    if type(atoms) != dict:
+        atoms = {"Blad parsera": "zla skladnia"}
     return render_template('/atomcounter/index.html', atoms=atoms)
 
 @app.route('/atomcounter/parse', methods=['POST'])
